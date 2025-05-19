@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top 10 Filmes</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <h1>TOP 10 FILMES</h1>
+  </header>
+
+  <div class="limites"></div>
+
+  <div id="tela">
+    <button class="btn" data-filme="TOY STORY">TOY STORY</button>
+    <button class="btn" data-filme="CORRA">CORRA</button>
+    <button class="btn" data-filme="VINGADOS GUERRA INFINITA">VINGADOS GUERRA INFINITA</button>
+    <button class="btn" data-filme="VINGADORES ULTIMATO">VINGADORES ULTIMATO</button>
+    <button class="btn" data-filme="O BABADOOK">O BABADOOK</button>
+    <button class="btn" data-filme="COACH CARTER">COACH CARTER</button>
+    <button class="btn" data-filme="O TIME DA REDENÇÃO">O TIME DA REDENÇÃO</button>
+    <button class="btn" data-filme="RONALDO">RONALDO</button>
+    <button class="btn" data-filme="SORRIA">SORRIA</button>
+    <button class="btn" data-filme="REI LEÃO">REI LEÃO</button>
+  </div>
+
+  <div class="limites2"></div>
+
+  <script>
+    const filmes = {
+      "TOY STORY": {
+        descricao: "Toy Story (1995) Quando os humanos não estão por perto, os brinquedos ganham vida. Woody, o caubói favorito de Andy, vê sua liderança ameaçada com a chegada do moderno Buzz Lightyear, iniciando uma divertida e emocionante jornada sobre amizade e aceitação.",
+        imagem: "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2015/11/133021-toy-story.jpg?tf=3840x"
+      },
+      "CORRA": {
+        descricao: "Corra! (2017) Chris, um jovem negro, visita a família de sua namorada branca e logo percebe que há algo muito estranho com eles. O que começa como um fim de semana comum se transforma em um terror psicológico cheio de críticas sociais. ",
+        imagem: "https://www.themoviedb.org/t/p/original/sr7IWKxmLPzqpfiigc1LD9vG97W.jpg"
+      },
+      "VINGADOS GUERRA INFINITA": {
+        descricao: "Vingadores: Guerra Infinita (2018) Os heróis da Marvel unem forças para enfrentar Thanos, um vilão poderoso que busca as Joias do Infinito para eliminar metade do universo. Uma corrida épica contra o tempo se inicia, com consequências devastadoras.",
+        imagem: "http://images.virgula.com.br/2018/04/rwhhkynelyfollk9pgfoeyvguob.jpg"
+      },
+      "VINGADORES ULTIMATO": {
+        descricao: "Vingadores: Ultimato (2019) Após a tragédia causada por Thanos, os heróis sobreviventes buscam uma forma de reverter o caos. Com viagens no tempo e sacrifícios emocionantes, essa batalha final marca o encerramento de uma era no Universo Marvel.",
+        imagem: "https://cafecomnerd.com.br/wp-content/uploads/2019/03/vingadores-ultimato-trailer-marvel.jpg"
+      },
+      "O BABADOOK": {
+        descricao: "O Babadook (2014) Uma mãe viúva e seu filho passam a ser atormentados por uma entidade sinistra após encontrarem um livro infantil misterioso. Um terror psicológico intenso sobre luto, trauma e monstros internos.",
+        imagem: "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/8d91579b5583df237cfb224044bf16645e4699b2728c51d17cec99d18fffcedf._RI_V_TTW_.jpg"
+      },
+      "COACH CARTER": {
+        descricao: "Coach Carter (2005) Baseado em fatos reais, o filme mostra o treinador Ken Carter exigindo disciplina e desempenho escolar de seus jogadores de basquete. Uma inspiradora lição de responsabilidade, superação e educação.",
+        imagem: "https://bvunlimited.nl/wp-content/uploads/2020/06/BV-UNLIMITED-filmtip-coach-carter-1024x1024.jpg"
+      },
+      "O TIME DA REDENÇÃO": {
+        descricao: "O Time da Redenção (2008) Documentário sobre o time de basquete dos EUA nas Olimpíadas de Pequim. Após fracassos anteriores, grandes nomes da NBA se unem para reconquistar o ouro e restaurar o prestígio do basquete americano. ",
+        imagem: "https://www.cibelebrandao.com.br/wp-content/uploads/2022/10/Time-da-Redencao.jpg"
+      },
+      "RONALDO": {
+        descricao: "Ronaldo (2015) Um olhar íntimo sobre a vida de Cristiano Ronaldo, revelando bastidores de sua carreira, vida pessoal e o esforço por trás de sua fama. Um documentário sobre foco, ambição e paixão pelo futebol.",
+        imagem: "https://br.web.img3.acsta.net/pictures/15/09/29/12/57/543717.jpg"
+      },
+      "SORRIA": {
+        descricao: "Sorria (2022) Após testemunhar um suicídio bizarro de uma paciente, a psiquiatra Rose começa a ser perseguida por uma força sobrenatural. Um terror psicológico que desafia a sanidade e esconde um mistério sombrio.",
+        imagem: "https://bocadoinferno.com.br/wp-content/uploads/2022/10/Sorria-2022-5.jpg"
+      },
+      "REI LEÃO": {
+        descricao: "O Rei Leão (1994) Simba, um jovem leão, foge após a morte de seu pai, o rei Mufasa. Anos depois, precisa enfrentar seu passado e assumir seu lugar como rei da savana. Uma jornada sobre coragem, responsabilidade e redenção.",
+        imagem: "https://www.cafecomfilme.com.br/media/k2/items/cache/e36a512fe5b90101a88ae780e05256f8_XL.jpg?t=20180528_151205"
+      }
+    };
+
+    const buttons = document.querySelectorAll(".btn");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const titulo = button.getAttribute("data-filme");
+        const filme = filmes[titulo];
+        const existingCard = button.nextElementSibling;
+
+        
+        if (existingCard && existingCard.classList.contains('card')) {
+          existingCard.remove();
+          return;
+        }
+
+       
+        document.querySelectorAll('.card').forEach(card => card.remove());
+
+        const card = document.createElement("div");
+        card.classList.add("card");
+        card.innerHTML = `
+          <h2>${titulo}</h2>
+          <img src="${filme.imagem}" alt="${titulo}" style="width: 100%; max-width: 400px; border-radius: 10px; margin: 10px 0;">
+          <p>${filme.descricao}</p>
+        `;
+        button.parentNode.insertBefore(card, button.nextSibling);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+header{
+    width: 100%;
+    margin: auto;
+    margin: -8px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.3);
+    font-family: "Playfair Display", serif;
+}
+body{
+    color: orange;
+    background-color: rgb(128, 125, 150);
+}
+
+.limites{
+    width: 60%;
+    height: 20px;
+    background-color: rgb(47,79,79);
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid ridge black;
+    border-radius: 2px;
+    
+}
+#tela{
+    width: 60%;
+    
+    margin: auto;
+    background-color:rgb(220,220,220);
+    text-align: center;
+
+}
+.btn{
+    width: 70%;
+    height: 80px;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    background-color: yellow;
+    border: solid darkgoldenrod;
+    border-width: 5px;
+    border-radius: 40px;
+    text-align: left;
+    font-size: large;
+    font-family: "Bebas Neue", sans-serif;
+    align-items: center;
+    
+    
+    
+}
+.btn.btn:hover{
+    border-color: black;
+}
+
+.limites2{
+    width: 60%;
+    height: 20px;
+    background-color: rgb(47,79,79);
+    margin: auto;
+    border: 2px solid ridge black;
+    border-radius: 2px;
+    
+}
+
+
+
+.card {
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    border: 2px solid darkgoldenrod;
+    border-radius: 20px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+}
